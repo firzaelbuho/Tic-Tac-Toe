@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_wp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:text="Pilih mode !!"
+            android:textColor="#ffffff" />
+
+
+
+        <Button
+            android:text="3 x 3"
+            android:background="@drawable/bg_win"
+            android:textColor="@android:color/white"
+            android:id="@+id/a"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="a"
+            />
+        <Button
+            android:background="@drawable/bg_win"
+            android:textColor="@android:color/white"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/b"
+            android:onClick="b"
+            android:text="4 x 4"
+            />
+
+        <Button
+            android:background="@drawable/bg_win"
+            android:textColor="@android:color/white"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/c"
+            android:onClick="c"
+            android:text="5 x 5"
+            />
+
+        <Button
+            android:background="@drawable/bg_win"
+            android:textColor="@android:color/white"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/d"
+            android:onClick="d"
+            android:text="6 x 6"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <com.google.android.gms.ads.AdView
+            android:layout_marginTop="20dp"
+            android:id="@+id/spanduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-8201627220488781/6858173070" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
